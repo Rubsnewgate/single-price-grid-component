@@ -1,0 +1,66 @@
+@import 'guide.scss';
+
+// Main Container
+.main-wrapper {
+	grid-template-rows: auto auto;
+	width: 300px;
+	height: auto;
+}
+
+// Comunity Section
+.comunity-section {
+	padding: 20px 20px	;
+}
+.comunity-section__title {
+	font-size: $mobile-lg-size;
+}
+.comunity-section__guarentee {
+	font-size: $mobile-md-size;
+}
+.comunity-section__description {
+	font-size: $mobile-sm-size;
+}
+.submit-btn {
+	height: 45px;
+	font-size: $mobile-md-size;
+}
+
+// Subscription Section
+.subscription-why-us-section {
+	grid-template-columns: 1fr;
+}
+.subscription__card {
+	padding: 20px;
+	border-radius: 0;
+}
+.subscription__price {
+	span {
+		font-size: $mobile-lg-size;
+	}
+	p {
+		font-size: $mobile-md-size;
+	}
+}
+.subscription__plan-description {
+	font-size: $mobile-sm-size;
+}
+
+.why-us__card {
+	padding: 20px;
+	border-radius: 0 0 10px 10px;
+}
+.reason {
+	font-size: $mobile-sm-size;
+}
+
+// Breakpoints
+@media screen and (width: 280px) {
+	.main-wrapper {
+		width: 100%;
+	}
+}
+@media screen and (min-height: 720px) and (max-height: 933px) {
+	body {
+		height: 100vh;
+	}
+}

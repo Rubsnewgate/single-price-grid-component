@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: hsl(204, 43%, 93%);
+}
+
+@media screen and (max-width: 541px) {
+  body {
+    height: auto;
+    padding: 50px 10px;
+  }
+}
+.main-wrapper {
+  grid-template-rows: auto auto;
+  width: 300px;
+  height: auto;
+}
+
+.comunity-section {
+  padding: 20px 20px;
+}
+
+.comunity-section__title {
+  font-size: 2.2rem;
+}
+
+.comunity-section__guarentee {
+  font-size: 1.6rem;
+}
+
+.comunity-section__description {
+  font-size: 1.4rem;
+}
+
+.submit-btn {
+  height: 45px;
+  font-size: 1.6rem;
+}
+
+.subscription-why-us-section {
+  grid-template-columns: 1fr;
+}
+
+.subscription__card {
+  padding: 20px;
+  border-radius: 0;
+}
+
+.subscription__price span {
+  font-size: 2.2rem;
+}
+.subscription__price p {
+  font-size: 1.6rem;
+}
+
+.subscription__plan-description {
+  font-size: 1.4rem;
+}
+
+.why-us__card {
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.reason {
+  font-size: 1.4rem;
+}
+
+@media screen and (width: 280px) {
+  .main-wrapper {
+    width: 100%;
+  }
+}
+@media screen and (min-height: 720px) and (max-height: 933px) {
+  body {
+    height: 100vh;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */
