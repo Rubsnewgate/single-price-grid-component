@@ -1,0 +1,54 @@
+@use 'guide.sass'
+
+// main container
+.main-wrapper
+	grid-template-rows: auto auto
+	width: 300px
+	height: auto
+
+// comunity section
+.comunity-section
+	padding: 20px 20px
+
+	&__title
+		font-size: guide.$mobile-lg-size
+
+	&__guarentee
+		font-size: guide.$mobile-md-size
+
+	&__description
+		font-size: guide.$mobile-sm-size
+
+.submit-btn
+	height: 45px
+	font-size: guide.$mobile-md-size
+
+// subscription section
+.subscription-why-us-section
+	grid-template-columns: 1fr
+
+.subscription__card
+	padding: 20px
+	border-radius: 0
+
+.subscription__price
+	span
+		font-size: guide.$mobile-lg-size
+
+	p
+		font-size: guide.$mobile-md-size
+
+.subscription__plan-description
+	font-size: guide.$mobile-sm-size
+
+.why-us__card
+	padding: 20px
+	border-radius: 0 0 10px 10px
+
+.reason
+	font-size: guide.$mobile-sm-size
+
+// breakpoints
+@media screen and (width: 280px)
+	.main-wrapper
+		width: 100%

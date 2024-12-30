@@ -1,0 +1,50 @@
+// primary colors
+$cyan: hsl(179, 62%, 43%)
+$light-cyan: hsl(179, 48%, 51%)
+$bright-yellow: hsl(71, 73%, 54%)
+
+// neutral colors
+$grayish-blue: hsl(217, 22%, 67%)
+$light-gray: hsl(204, 43%, 93%)
+$white: hsl(0, 0%, 100%)
+
+// typography
+$primary-font: 'Karla', sans-serif
+
+// font-sises
+$lg-size: 2.8rem
+$md-size: 2rem
+$sm-size: 1.8rem
+
+// mobile font-sises
+$mobile-lg-size: 2.2rem
+$mobile-md-size: 1.6rem
+$mobile-sm-size: 1.4rem
+
+// font-weights
+$normal: 400
+$bold: 700
+
+// general resets
+*
+	box-sizing: border-box
+
+html
+	font-size: 62.5%
+
+body
+	display: grid
+	place-content: center
+	width: 100%
+	min-height: 100vh
+	margin: 0
+	padding: 20px 10px
+	background-color: $light-gray
+
+// mixins
+@mixin flexbox($direction:null, $justify:null, $align:null, $gap:null)
+	display: flex
+	flex-direction: $direction
+	justify-content: $justify
+	align-items: $align
+	gap: $gap
